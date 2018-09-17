@@ -167,6 +167,24 @@ def move_direct9():
         count = count + 1
         delay(0.1)
 
+def move_direct10():
+    x, y = 712, 349
+    x1, y1 = 712, 349
+    x2, y2 = 203, 535
+    count = 0
+
+    move_x1 = x2 - x1
+    move_y1 = y2 - y1
+
+    while count < 10:
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        x = x + move_x1 / 10
+        y = y + move_y1 / 10
+        count = count + 1
+        delay(0.1)
+
 while True:
     move_direct1()
     move_direct2()
@@ -177,6 +195,7 @@ while True:
     move_direct7()
     move_direct8()
     move_direct9()
+    move_direct10()
 
 
 close_canvas()
