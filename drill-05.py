@@ -60,22 +60,112 @@ def move_direct3():
         delay(0.1)
 
 def move_direct4():
-    pass
+    x, y = 477, 203
+    x1, y1 = 477, 203
+    x2, y2 = 715, 136
+    count = 0
+
+    move_x1 = x2 - x1
+    move_y1 = y2 - y1
+
+    while count < 10:
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        x = x + move_x1 / 10
+        y = y + move_y1 / 10
+        count = count + 1
+        delay(0.1)
 
 def move_direct5():
-    pass
+    x, y = 715, 236
+    x1, y1 = 715, 236
+    x2, y2 = 316, 225
+    count = 0
+
+    move_x1 = x2 - x1
+    move_y1 = y2 - y1
+
+    while count < 10:
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        x = x + move_x1 / 10
+        y = y + move_y1 / 10
+        count = count + 1
+        delay(0.1)
 
 def move_direct6():
-    pass
+    x, y = 316, 225
+    x1, y1 = 316, 225
+    x2, y2 = 510, 92
+    count = 0
+
+    move_x1 = x2 - x1
+    move_y1 = y2 - y1
+
+    while count < 10:
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        x = x + move_x1 / 10
+        y = y + move_y1 / 10
+        count = count + 1
+        delay(0.1)
 
 def move_direct7():
-    pass
+    x, y = 510, 92
+    x1, y1 = 510, 92
+    x2, y2 = 692, 518
+    count = 0
+
+    move_x1 = x2 - x1
+    move_y1 = y2 - y1
+
+    while count < 10:
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        x = x + move_x1 / 10
+        y = y + move_y1 / 10
+        count = count + 1
+        delay(0.1)
 
 def move_direct8():
-    pass
+    x, y = 692, 518
+    x1, y1 = 692, 518
+    x2, y2 = 682, 336
+    count = 0
+
+    move_x1 = x2 - x1
+    move_y1 = y2 - y1
+
+    while count < 10:
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        x = x + move_x1 / 10
+        y = y + move_y1 / 10
+        count = count + 1
+        delay(0.1)
 
 def move_direct9():
-    pass
+    x, y = 682, 336
+    x1, y1 = 682, 336
+    x2, y2 = 712, 349
+    count = 0
+
+    move_x1 = x2 - x1
+    move_y1 = y2 - y1
+
+    while count < 10:
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        x = x + move_x1 / 10
+        y = y + move_y1 / 10
+        count = count + 1
+        delay(0.1)
 
 while True:
     move_direct1()
