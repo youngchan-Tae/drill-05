@@ -2,7 +2,7 @@ from pico2d import *
 open_canvas()
 
 grass = load_image('grass.png')
-character = load_image('character.png')
+character = load_image('animation_sheet.png')
 
 def move_direct1():
     x, y = 203, 535
@@ -13,14 +13,20 @@ def move_direct1():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 0, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct2():
     x, y = 132, 243
@@ -31,15 +37,20 @@ def move_direct2():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
 
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 100, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct3():
     x, y = 535, 470
@@ -50,14 +61,20 @@ def move_direct3():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 0, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct4():
     x, y = 477, 203
@@ -68,14 +85,20 @@ def move_direct4():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 100, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct5():
     x, y = 715, 236
@@ -86,14 +109,20 @@ def move_direct5():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 0, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct6():
     x, y = 316, 225
@@ -104,14 +133,20 @@ def move_direct6():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 100, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct7():
     x, y = 510, 92
@@ -122,14 +157,20 @@ def move_direct7():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 100, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct8():
     x, y = 692, 518
@@ -140,14 +181,20 @@ def move_direct8():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 100, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct9():
     x, y = 682, 336
@@ -158,14 +205,20 @@ def move_direct9():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 100, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 def move_direct10():
     x, y = 712, 349
@@ -176,14 +229,20 @@ def move_direct10():
     move_x1 = x2 - x1
     move_y1 = y2 - y1
 
+    frame = 0
+
     while count < 10:
         clear_canvas_now()
         grass.draw_now(400, 30)
-        character.draw_now(x, y)
+        character.clip_draw(frame * 100, 0, 100, 100, x, y) 
+        update_canvas()
         x = x + move_x1 / 10
         y = y + move_y1 / 10
         count = count + 1
+        frame = (frame + 1) % 8 
+        update_canvas()
         delay(0.1)
+        get_events()
 
 while True:
     move_direct1()
